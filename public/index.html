@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Forms Assgnment</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+</script>
+
+<style>
+  /* Style for form container */
+  #myForm {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+  }
+
+  /* Style for input fields */
+  input[type="text"],
+  input[type="email"] {
+    max-width: 500px;
+    width: 100%;
+    padding: 5px 0px 5px 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  /* Style for submit button */
+  button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  /* Hover effect for the submit button */
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+</style>
+
+</head>
+<body>
+<form id="myForm" method="POST" action="/submit">
+  <p>Sign In</P>
+<input type="text" name="firstName" placeholder="firstName" />
+<input type="text" name="lastName" placeholder="lastName" />
+<input type="email" name="email" placeholder="email" />
+<button type="submit">Submit</button>
+</form>
+</body>
+</html>
